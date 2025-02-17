@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.15/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.css" />
+
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css" />
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <title>Trang chủ - CÔNG TY TNHH CÔNG NGHỆ LXC</title>
+    <link rel="stylesheet" href="css/style.bundle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/productHome.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="icon" href="https://lxc.vn/wp-content/uploads/2024/10/cropped-lxc-32x32.webp" sizes="32x32" />
+</head>
+
+<body>
+    <!-- <div class="bg-info w-100 d-flex flex-center fs-4 py-2 text-warning">Due to the COVID 19 epidemic, orders may be processed with a slight delay</div> -->
+    <div class="sticky-top bg-white shadow-sm d-none d-lg-block">
+        <div class="container d-flex position-relative">
+            <div id="logo" class="w-25 d-flex justify-content-between align-items-center">
+                <a href="/Index.html">
+                    <img class="w-75" src="/Assest/lxc-dark.png" alt="" />
+                </a>
+                <a href="javascript:void(0);" id="menu-burger">
+                    <i class="fi fi-rr-menu-burger fs-1 text-primary"></i>
+                </a>
+            </div>
+            <div id="logo" class="w-50 px-10 d-flex flex-center">
+                <div class="w-100 position-relative">
+                    <input class="form-control w-100" type="text" placeholder="Tìm kiếm ..." />
+                    <i class="fi fi-rr-search fs-3 position-absolute top-25 end-0 me-5"></i>
+                </div>
+            </div>
+            <div id="logo" class="w-25 d-flex align-items-center gap-2 fs-4">
+                <div class="">
+                    <i class="fi fi-rr-phone-call pe-3 fs-fluid"></i> 088
+                    6568 444
+                </div>
+                <!-- <div class=""><i class="fi fi-rr-heart fs-3"></i></div>
+					<div class=""><i class="fi fi-rr-user fs-3"></i></div> -->
+                <div class="cart position-relative w-50px text-end">
+                    <a href="/src/cart.html">
+                        <i class="fi fi-rr-shopping-cart fs-1"></i>
+                    </a>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        5
+                        <span class="visually-hidden">Số lượng sản phẩm trong giỏ hàng</span>
+                    </span>
+                    <div class="cart-view text-start">
+                        <div class="d-flex p-10 flex-column gap-5">
+                            <div class="cart-items w-100 d-flex flex-column gap-5 mh-500px overflow-scroll">
+                                <div class="h-100px w-100 d-flex gap-5">
+                                    <div class="">
+                                        <img class="h-100 rounded-1" src="/Assest/media/product/sp-1.jpg" alt=""
+                                            srcset="" />
+                                    </div>
+                                    <div class="">
+                                        <h2 class="text-primary">
+                                            Khóa vân tay thông minh DL10
+                                        </h2>
+                                        <h3 class="text-orange">
+                                            5.990.000 ₫
+                                        </h3>
+                                    </div>
+                                    <div class="ms-auto fs-2">x</div>
+                                </div>
+                                <!-- <div class="h-100px w-100 d-flex gap-5">
+									<div class="">
+										<img class="h-100 rounded-1" src="Assest/media/product/sp-2.png" alt="" srcset="">
+									</div>
+									<div class="">
+										<h2 class="text-primary">Khóa cửa thông minh DAHUA DHI-ASL8212R-B/S-B</h2>
+										<h3 class="text-orange">7.324.000 ₫</h3>
+									</div>
+									<div class="ms-auto fs-2">
+										x
+									</div>
+								</div>
+								<div class="h-100px w-100 d-flex gap-5">
+									<div class="">
+										<img class="h-100 rounded-1" src="Assest/media/product/sp-3.png" alt="" srcset="">
+									</div>
+									<div class="">
+										<h2 class="text-primary">Khóa cửa cho căn hộ, nhà phố PHGLOCK KR7153 (Bạc)</h2>
+										<h3 class="text-orange">2.850.000 ₫</h3>
+									</div>
+									<div class="ms-auto fs-2">
+										x
+									</div>
+								</div> -->
+                            </div>
+                            <div class="total w-100 d-flex">
+                                <div class="fw-bold fs-3 text-primary">
+                                    Tổng tiền
+                                </div>
+                                <div class="ms-auto fw-bold fs-3 text-primary">
+                                    16.164.000 đ
+                                </div>
+                            </div>
+                            <a href="/src/cart.html">
+                                    <div class="cart-actions w-100">
+                                        <button class="orange-btn rounded-pill w-100">
+                                            Xem giỏ hàng
+                                        </button>
+                                    </div>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div id="menu-bar" class="container d-flex justify-content-between align-items-center gap-5 ">
+			<div class="flex-grow-1 align-items-center h-100 d-flex gap-10 fs-3 fw-bold text-uppercase">
+                <a class="bg-gray-200 px-4 h-100 d-flex flex-center" href="/">Trang chủ</a>
+                <div class="product-categories-target h-100 d-flex align-items-center px-4">
+                    <a href="/src/ListProduct.html">Sản phẩm </a> <i class="fi fi-rr-angle-down ms-5"></i>
+                    <div class="product-category-nav">
+                        <div class="container py-10 d-flex">
+							<div class="h-100 flex-grow-1 d-flex flex-column min-w-300px fs-3  cursor-pointer">
+								<div class="collection-menu bg-gray-200" data-collection="camera">Camera</div>
+								<div class="collection-menu" data-collection="internet">Thiết bị mạng</div>
+								<div class="collection-menu" data-collection="smartHome">Thiết bị SmartHome</div>
+								<div class="collection-menu" data-collection="doorLock">Khoá cửa thông minh</div>
+								<div class="collection-menu" data-collection="sound">Hệ thống âm thanh</div> 
+								<div class="collection-menu" data-collection="onlineMeet">Thiết bị họp trực tuyến</div>
+							</div>
+							<div class="categories w-100 collection">
+                                <a href="/src/ListProduct.html">
+                                    <div class="card-info position-relative py-2 px-4" style="height: fit-content; min-height: 180px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                                        <div class="overflow-hidden">
+                                            <img class="w-100" src="/Assest/media/collection/camera/1.png" alt="" srcset="">
+                                        </div>
+                                        <div class="project-info fs-3 py-2">
+                                            <h1 class="text-primary fs-3 title">Camera Wifi</h1>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/src/ListProduct.html"> 
+                                    <div class="card-info position-relative py-2 px-4" style="height: fit-content; min-height: 180px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                                        <div class="overflow-hidden">
+                                            <img class="w-100" src="/Assest/media/collection/camera/2.png" alt="" srcset="">
+                                        </div>
+                                        <div class="project-info fs-3 py-2">
+                                            <h1 class="text-primary fs-3 title">Camera IP</h1>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/src/ListProduct.html"> 
+                                    <div class="card-info position-relative py-2 px-4" style="height: fit-content; min-height: 180px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                                        <div class="overflow-hidden">
+                                            <img class="w-100" src="/Assest/media/collection/camera/3.png" alt="" srcset="">
+                                        </div>
+                                        <div class="project-info fs-3 py-2">
+                                            <h1 class="text-primary fs-3 title">Camera Analog</h1>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/src/ListProduct.html"> 
+                                    <div class="card-info position-relative py-2 px-4" style="height: fit-content; min-height: 180px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                                        <div class="overflow-hidden">
+                                            <img class="w-100" src="/Assest/media/collection/camera/4.png" alt="" srcset="">
+                                        </div>
+                                        <div class="project-info fs-3 py-2">
+                                            <h1 class="text-primary fs-3 title">Đầu ghi hình</h1>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/src/ListProduct.html"> 
+                                    <div class="card-info position-relative py-2 px-4" style="height: fit-content; min-height: 180px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                                        <div class="overflow-hidden">
+                                            <img class="w-100" src="/Assest/media/collection/camera/5.jpg" alt="" srcset="">
+                                        </div>
+                                        <div class="project-info fs-3 py-2">
+                                            <h1 class="text-primary fs-3 title">Phụ kiện</h1>
+                                        </div>
+                                    </div>
+                                </a>
+							</div>
+                        </div>
+                    </div>
+                </div>
+                <a class="px-4 h-100 d-flex flex-center" href="/blog/blog.html">Bài viết</a>
+                <a class="px-4 h-100 d-flex flex-center" href="/src/project.html">Dự án</a>
+                <a class="px-4 h-100 d-flex flex-center" href="/src/contact.html">Liên hệ</a>
+                <a class="px-4 h-100 d-flex flex-center" href="/src/about.html">Về chúng tôi</a>
+            </div>
+			<!-- <div class="d-flex flex-center text-gray-600 fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+			</div> -->
+		</div>
+    </div>
+    <div id="nav-mobile" class="sticky-top bg-white shadow-sm d-block d-lg-none">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="/Index.html">
+                    <img class="w-200px" src="../Assest/lxc-dark.png" alt="" />
+                </a>
+                <i class="fi fi-rr-search fs-3tx text-primary"></i>
+            </div>
+        </div>
+    </div>
+
+	<div id="menu-side">
+		<div class="menu-content">
+			<div class="accordion accordion-icon-toggle">
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center" href="/">
+						Trang chủ
+					</a>
+				</div>
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#productCollection">
+						Sản phẩm
+						<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+					</a>
+					<div class="collapse" id="productCollection">
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#camera">
+							Camera 
+						</a>
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#network">
+							Thiết bị mạng 
+						</a>
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#smarthome">
+							Thiết bị SmartHome
+						</a>
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#doorLock">
+							Khóa cửa thông minh
+						</a>
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#sound">
+							Hệ thống âm thanh 
+						</a>
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#meeting">
+							Thiết bị họp trực tuyến
+						</a>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center" href="/blog/blog.html">
+						Bài viết
+					</a>
+				</div>
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center" href="/src/project.html">
+						Dự án
+					</a>
+				</div>
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center" href="/src/contact.html">
+						Liên hệ
+					</a>
+				</div>
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center" href="/src/about.html">
+						Về chúng tôi
+					</a>
+				</div>
+				<!-- <div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#fashion">
+						Fashion
+						<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+					</a>
+					<div class="collapse" id="fashion">
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#menswear">
+							Menswear
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="menswear">
+							<a class="list-group-item list-group-item-action">Shirts</a>
+							<a class="list-group-item list-group-item-action">Trousers</a>
+						</div>
+						
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#womenswear">
+							Womenswear
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="womenswear">
+							<a class="list-group-item list-group-item-action">Dresses</a>
+							<a class="list-group-item list-group-item-action">Tops</a>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<a class="list-group-item list-group-item-action fw-bold d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#beauty">
+						Beauty & Health
+						<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+					</a>
+					<div class="collapse" id="beauty">
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#skincare">
+							Skincare
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="skincare">
+							<a class="list-group-item list-group-item-action">Moisturizer</a>
+							<a class="list-group-item list-group-item-action">Sunscreen</a>
+						</div>
+						
+						<a class="list-group-item list-group-item-action ms-3 d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#makeup">
+							Makeup
+							<i class="fi fi-rr-angle-small-down toggle-btn ms-auto accordion-icon"></i>
+						</a>
+						<div class="collapse ms-4" id="makeup">
+							<a class="list-group-item list-group-item-action">Foundation</a>
+							<a class="list-group-item list-group-item-action">Lipstick</a>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+    <div id="footer-nav"
+        class="d-lg-none d-flex position-fixed px-4 py-5 bottom-0 bg-white border-top shadow z-index-3 justify-content-around">
+        <div class="open-menu">
+            <i class="fi fi-rr-menu-burger fs-2x"></i>
+        </div>
+        <div class="">
+            <i class="fi fi-rr-house-chimney fs-2x"></i>
+        </div>
+         
+        <div class="">
+            <i class="fi fi-rr-user fs-2x"></i>
+        </div>
+         <div class="position-relative">
+			<div class="">
+				<i class="fi fi-rr-shopping-cart fs-2x"></i>
+			</div>
+			<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+				5
+				<span class="visually-hidden">Số lượng sản phẩm trong giỏ hàng</span>
+			</span>
+		</div>
+    </div>
+
+    <div class="d-flex flex-column gap-20">
+        <div id="banner" class="slide position-relative">
+            <div class="single-item">
+                <div class="carousel-item position-relative">
+                    <div class="content d-xl-block d-none">
+                        <div class="container">
+                            <h1 class="banner-title">H9c Dual 2K Camera</h1>
+                            <p class="banner-desc">
+                                Tự động hóa. Toàn diện. Toàn năng.
+                            </p>
+                        </div>
+                    </div>
+                    <img class="d-block h-100" src="/Assest/media/2000x800/5.jpg" alt="First slide" />
+                </div>
+                <div class="carousel-item position-relative">
+                    <div class="content d-xl-block d-none">
+                        <div class="container">
+                            <h1 class="banner-title">
+                                H7c Dual 2K⁺ Camera
+                            </h1>
+                            <p class="banner-desc">
+                                Tầm nhìn bao quát hơn cho sự bảo vệ toàn
+                                diện
+                            </p>
+                            <p class="banner-desc">
+                                và thông minh hơn với ống kính kép
+                            </p>
+                        </div>
+                    </div>
+                    <img class="d-block h-100" src="/Assest/media/2000x800/6.jpg" alt="First slide" />
+                </div>
+                <div class="carousel-item position-relative">
+                    <div class="content d-xl-block d-none">
+                        <div class="container">
+                            <h1 class="banner-title">KOFEN KGT08</h1>
+                            <p class="banner-desc">
+                                Khóa vân tay thông minh
+                            </p>
+                        </div>
+                    </div>
+                    <img class="d-block h-100" src="/Assest/media/2000x800/7.jpg" alt="First slide" />
+                </div>
+                <div class="carousel-item position-relative">
+                    <!-- <div class="content d-xl-block d-none">
+						<div class="container">
+							<h1 class="banner-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+							<p class="banner-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error saepe officia quia voluptate ducimus iure, velit voluptatum possimus officiis odio illum quam cupiditate iste aliquam, facere quas? Dolores, nostrum quasi?</p>
+						</div>
+					</div> -->
+                    <img class="d-block h-100" src="/Assest/media/2000x800/4.jpg" alt="First slide" />
+                    <div class="mask"></div>
+                </div>
+            </div>
+            <a class="prev start-0"><i class="fi fi fi-ss-angle-circle-left"></i></a>
+            <a class="next end-0"><i class="fi fi fi-ss-angle-circle-right"></i></a>
+        </div>
+
+        <div id="introduce" class="container">
+            <div class="row">
+                <div
+                    class="col-12 col-lg-5 d-flex flex-column justify-content-center align-items-center align-items-lg-start gap-5 text-lg-start text-center">
+                    <h1 class="introduce-title">
+                        Tại sao chọn LXC Technology
+                    </h1>
+                    <p class="introduce-desc">
+                        Được thành lập vào năm 2020, với sứ mệnh mang đến
+                        cho khách hàng một sự trải nghiệm với về sản phẩn
+                        phẩm công nghệ. Sản phẩm đa dạng, đội ngủ kỹ thuật
+                        chuyên sâu, LXC đã có nhiều năm kinh nghiệm trong
+                        lĩnh vực công nghệ thông tin.
+                    </p>
+                    <a href="/src/about.html">
+                        <button type="button" class="orange-btn rounded-pill fs-3">Tìm hiểu thêm</button>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-7 d-flex justify-content-end">
+                    <img class="d-block w-100" src="/Assest/introduce.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <section class="container my-5 info-about-us-home">
+
+            <!-- Header animate (tùy chọn) -->
+            <div class="text-center mb-5 wow fadeInDown" data-wow-duration="2s">
+                <div class="fs-3 text-warning">An ninh nhà thông minh</div>
+                <h2 class="display-4 custom-title">
+                    Kiệt tác về An ninh Nhà Thông minh
+                </h2>
+                <p class="custom-desc">
+                    Từ camera an ninh đến chuông cửa và nhiều sản phẩm khác,
+                    luôn kết nối khi bạn ở nhà hay đi vắng
+                </p>
+            </div>
+
+            <!-- Sản phẩm 1: Text bên trái, ảnh bên phải (animate toàn bộ từ bên trái) -->
+            <div class="product-group wow slideInLeft" data-wow-duration="2s">
+                <div class="row align-items-center g-0">
+                    <div class="col-md-6">
+                        <p class="text-uppercase text-muted m-0">
+                            Camera An ninh
+                        </p>
+                        <h3 class="fw-bold display-6 m-0">
+                            Camera Pin sạc
+                        </h3>
+                        <p class="custom-desc m-0">
+                            Hoạt động ở bất cứ đâu bạn cần nhờ thời lượng
+                            pin lâu dài và thiết kế không dây 100%.
+                        </p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <img src="Assest/media/600x600/img-24.jpg" alt="Camera Pin sạc"
+                            class="img-fluid rounded shadow-sm m-0" />
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+
+            <!-- Sản phẩm 2: Ảnh bên trái, text bên phải (animate toàn bộ từ bên phải) -->
+            <div class="product-group wow slideInRight" data-wow-duration="2s">
+                <div class="row align-items-center g-0">
+                    <div class="col-md-6 order-md-1 order-2">
+                        <img src="Assest/media/600x600/img-25.jpg" alt="Camera Wi-Fi Trong nhà"
+                            class="img-fluid rounded shadow-sm m-0" />
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1">
+                        <p class="text-uppercase text-muted m-0">
+                            Camera An ninh
+                        </p>
+                        <h3 class="fw-bold display-6 m-0">
+                            Camera Wi-Fi Trong nhà
+                        </h3>
+                        <p class="custom-desc m-0">
+                            Được thiết kế để tự lắp đặt đơn giản và trực
+                            quan, an ninh cho nhà thông minh trở nên thật dễ
+                            dàng.
+                        </p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+
+            <!-- Sản phẩm 3: Text bên trái, ảnh bên phải (animate toàn bộ từ bên trái) -->
+            <div class="product-group wow slideInLeft" data-wow-duration="2s">
+                <div class="row align-items-center g-0">
+                    <div class="col-md-6">
+                        <p class="text-uppercase text-muted m-0">
+                            Camera An ninh
+                        </p>
+                        <h3 class="fw-bold display-6 m-0">
+                            Camera Wi-Fi Ngoài trời
+                        </h3>
+                        <p class="custom-desc m-0">
+                            Phát hiện, cảnh báo và bảo vệ ngôi nhà của bạn
+                            24/7 với tầm nhìn ban đêm tuyệt vời.
+                        </p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <img src="Assest/media/600x600/img-26.jpg" alt="Camera Wi-Fi Ngoài trời"
+                            class="img-fluid rounded shadow-sm m-0" />
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+
+            <!-- Sản phẩm 4: Ảnh bên trái, text bên phải (animate toàn bộ từ bên phải) -->
+            <div class="product-group wow slideInRight" data-wow-duration="2s">
+                <div class="row align-items-center g-0">
+                    <div class="col-md-6 order-md-1 order-2">
+                        <img src="Assest/media/600x600/img-27.jpg" alt="Phụ kiện"
+                            class="img-fluid rounded shadow-sm m-0" />
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1">
+                        <p class="text-uppercase text-muted m-0">
+                            Camera An ninh
+                        </p>
+                        <h3 class="fw-bold display-6 m-0">Phụ kiện</h3>
+                        <p class="custom-desc m-0">
+                            Các thiết bị bổ trợ giúp bạn kết hợp hoàn hảo
+                            với an ninh nhà thông minh.
+                        </p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </section>
+
+        <!-- <div id="smart-home" class="container w-100">
+                <div class="row">
+                    <div
+                        class="col-12 col-lg-6 pe-lg-20 pe-0 d-flex flex-column gap-5 justify-content-center align-items-lg-start align-items-center py-3"
+                    >
+                        <div class="group-target fs-3 text-warning"></div>
+                        <div
+                            class="title text-center text-lg-start title-target"
+                        >
+                            Kiệt tác về An ninh Nhà Thông minh
+                        </div>
+                        <div class="desc text-center text-lg-start desc-target">
+                            Từ camera an ninh đến chuông cửa và nhiều sản phẩm
+                            khác, luôn kết nối khi bạn ở nhà hay đi vắng
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex h-200px h-lg-400px">
+                        <div
+                            class="solution-product h-100 flex-grow-1"
+                            group="Camera An ninh"
+                            title="Camera Pin sạc"
+                            desc="Hoạt động ở bất cứ đâu bạn cần nhờ thời lượng pin lâu dài và thiết kế không dây 100%."
+                        >
+                            <img
+                                class=""
+                                src="Assest/media/600x600/img-24.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="solution-product h-100"
+                            group="Camera An ninh"
+                            title="Camera Wi-Fi Trong nhà"
+                            desc="Được thiết kế để tự lắp đặt đơn giản và trực quan, an ninh cho nhà thông minh trở nên thật dễ dàng."
+                        >
+                            <img
+                                class=""
+                                src="Assest/media/600x600/img-25.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="solution-product h-100"
+                            group="Camera An ninh"
+                            title="Camera Wi-Fi Ngoài trời"
+                            desc="Phát hiện, cảnh báo và bảo vệ ngôi nhà của bạn 24/7 với tầm nhìn ban đêm tuyệt vời."
+                        >
+                            <img
+                                class=""
+                                src="Assest/media/600x600/img-26.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="solution-product h-100"
+                            group="Camera An ninh"
+                            title="Phụ kiện"
+                            desc="Các thiết bị bổ trợ giúp bạn kết hợp hoàn hảo với an ninh nhà thông minh."
+                        >
+                            <img
+                                class=""
+                                src="Assest/media/600x600/img-27.jpg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        <div id="lasted-product" class="container product-home">
+            <div class="w-100 text-center py-5">
+                <h1 class="title">Sản phẩm bán chạy</h1>
+            </div>
+
+            <!-- Category Tabs (Pills) -->
+            <!-- Category Tabs (Pills) -->
+            <div class="product-categories mb-10">
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item">
+                        <button type="button" class="nav-link active rounded-pill">
+                            Khoá cửa thông minh
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="nav-link rounded-pill">
+                            Thiết bị Camera
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="nav-link rounded-pill">
+                            Thiết bị mạng
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="nav-link rounded-pill">
+                            Thiết bị smart home
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="nav-link rounded-pill">
+                            Hệ thống âm thanh
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="nav-link rounded-pill">
+                            Hệ thống tổng đài
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Product List -->
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-3">
+                    <div class="card fixed-card shadow-sm">
+                        <div class="img-wrapper p-2">
+                            <img src="/Assest/media/product/sp-1.jpg" class="img-fluid"
+                                alt="Khóa vân tay thông minh DL10" />
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <a href="" class="fw-bold line-clamp-2">Khóa vân tay thông minh DL10</a>
+                            </h5>
+                            <p class="text-danger fs-4">5.990.000 ₫</p>
+                            <div class="mt-auto">
+                                <button class="orange-btn-none-hover text-light btn w-100">
+                                    <i class="fi fi-rr-shopping-cart-add fs-2 fw-bold text-dark"></i>
+                                    Thêm vào giỏ hàng [+]
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-3">
+                    <div class="card fixed-card shadow-sm">
+                        <div class="img-wrapper p-2">
+                            <img src="/Assest/media/product/sp-2.png" class="img-fluid"
+                                alt="Khóa cửa thông minh DAHUA DHI-ASL8212R-B/S-B" />
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <a href="" class="fw-bold line-clamp-2">Khóa cửa thông minh DAHUA
+                                    DHI-ASL8212R-B/S-B</a>
+                            </h5>
+                            <p class="text-danger fs-4">7.324.000 ₫</p>
+                            <div class="mt-auto">
+                                <button class="orange-btn-none-hover text-light btn w-100">
+                                    <i class="fi fi-rr-shopping-cart-add fs-2 fw-bold text-dark"></i>
+                                    Thêm vào giỏ hàng [+]
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-3">
+                    <div class="card fixed-card shadow-sm">
+                        <div class="img-wrapper p-2">
+                            <img src="/Assest/media/product/sp-3.png" class="img-fluid"
+                                alt="Khóa cửa cho căn hộ, nhà phố PHGLOCK KR7153 (Bạc)" />
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <a href="" class="fw-bold line-clamp-2">Khóa cửa cho căn hộ, nhà phố PHGLOCK
+                                    KR7153 (Bạc)</a>
+                            </h5>
+                            <p class="text-danger fs-4">2.800.000 ₫</p>
+                            <div class="mt-auto">
+                                <button class="orange-btn-none-hover text-light btn w-100">
+                                    <i class="fi fi-rr-shopping-cart-add fs-2 fw-bold text-dark"></i>
+                                    Thêm vào giỏ hàng [+]
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-3">
+                    <div class="card fixed-card shadow-sm">
+                        <div class="img-wrapper p-2">
+                            <img src="/Assest/media/product/sp-4.png" class="img-fluid"
+                                alt="Khóa cửa cho văn phòng, căn hộ PHGLOCK FP8003" />
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <a href="" class="fw-bold line-clamp-2">Khóa cửa cho văn phòng, căn hộ PHGLOCK
+                                    FP8003</a>
+                            </h5>
+                            <p class="text-danger fs-4">2.800.000 ₫</p>
+                            <div class="mt-auto">
+                                <button class="orange-btn-none-hover text-light btn w-100">
+                                    <i class="fi fi-rr-shopping-cart-add fs-2 fw-bold text-dark"></i>
+                                    Thêm vào giỏ hàng [+]
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="col-md-3">
+                    <div class="card fixed-card shadow-sm">
+                        <div class="img-wrapper p-2">
+                            <img src="/Assest/media/product/sp-5.jpg" class="img-fluid"
+                                alt="KHÓA THÔNG MINH GIOVANI GSL-K66BS" />
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <a href="" class="fw-bold line-clamp-2">KHÓA THÔNG MINH GIOVANI GSL-K66BS</a>
+                            </h5>
+                            <p class="text-danger fs-4">9.560.000 ₫</p>
+                            <div class="mt-auto">
+                                <button class="orange-btn-none-hover text-light btn w-100">
+                                    <i class="fi fi-rr-shopping-cart-add fs-2 fw-bold text-dark"></i>
+                                    Thêm vào giỏ hàng [+]
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="col-md-3">
+                    <div class="card fixed-card shadow-sm">
+                        <div class="img-wrapper p-2">
+                            <img src="/Assest/media/product/sp-6.jpg" class="img-fluid"
+                                alt="KHÓA CỬA NHÔM GIOVANI GSL-K276S" />
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <a href="" class="fw-bold line-clamp-2">KHÓA CỬA NHÔM GIOVANI GSL-K276S</a>
+                            </h5>
+                            <p class="text-danger fs-4">8.980.000 ₫</p>
+                            <div class="mt-auto">
+                                <button class="orange-btn-none-hover text-light btn w-100">
+                                    <i class="fi fi-rr-shopping-cart-add fs-2 fw-bold text-dark"></i>
+                                    Thêm vào giỏ hàng [+]
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="container">
+            <div class="w-100 text-center py-5">
+                <h1 class="title">Dự án</h1>
+            </div>
+            <div class="d-block d-sm-flex justify-content-between centered-slide">
+                <div class="card-info position-relative mx-3">
+                    <img class="w-100" src="Assest/media/600x400/img-76.jpg" alt="" srcset="" />
+                    <div class="project-info fs-3 py-2 position-absolute">
+                        Vàng bạc Bảo Tín Mạnh Hải
+                    </div>
+                </div>
+                <div class="card-info position-relative mx-3">
+                    <img class="w-100" src="Assest/media/600x400/img-77.jpg" alt="" srcset="" />
+                    <div class="project-info fs-3 py-2 position-absolute">
+                        Chuỗi cà phê Lack Tack
+                    </div>
+                </div>
+                <div class="card-info position-relative mx-3">
+                    <img class="w-100" src="Assest/media/600x400/img-78.jpg" alt="" srcset="" />
+                    <div class="project-info fs-3 py-2 position-absolute">
+                        Nhà máy Kyocera Việt Nam
+                    </div>
+                </div>
+                <div class="card-info position-relative mx-3">
+                    <img class="w-100" src="Assest/media/600x400/img-79.jpg" alt="" srcset="" />
+                    <div class="project-info fs-3 py-2 position-absolute">
+                        Nhà máy Elentec
+                    </div>
+                </div>
+                <div class="card-info position-relative mx-3">
+                    <img class="w-100" src="Assest/media/600x400/img-80.jpg" alt="" srcset="" />
+                    <div class="project-info fs-3 py-2 position-absolute">
+                        KHU RESORT BÃI DÀI
+                    </div>
+                </div>
+                <div class="card-info position-relative mx-3">
+                    <img class="w-100" src="Assest/media/600x400/img-81.jpg" alt="" srcset="" />
+                    <div class="project-info fs-3 py-2 position-absolute">
+                        CÔNG TY TNHH KIM MINH PHÁT
+                    </div>
+                </div>
+                <div class="card-info position-relative mx-3">
+                    <img class="w-100" src="Assest/media/600x400/img-82.jpg" alt="" srcset="" />
+                    <div class="project-info fs-3 py-2 position-absolute">
+                        NHÀ HÀNG SEOUL BULGOGI
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="blog" class="container mb-10">
+            <div class="w-100 text-center py-5">
+                <a href="/blog/blog.html">
+                    <h1 class="title">Mẹo công nghệ</h1>
+                </a>
+            </div>
+            <div class="blog row">
+                <div class="col-12 col-sm-6 col-lg-4 py-3">
+                    <div class="card-blog-home">
+                        <a href="/blog/post.html">
+                            <img class="card-blog-home-img" src="Assest/media/900x600/40.jpg" alt="" />
+                        </a>
+                        <div class="card-blog-home-body">
+                            <div class="blog-title fs-1"
+                                title="WiFi Chậm Làm Bạn Bực Mình? Giải Pháp Dứt Điểm Cùng LXC Technology ngay trong năm 2025!">
+                                WiFi Chậm Làm Bạn Bực Mình? Giải Pháp Dứt
+                                Điểm Cùng LXC Technology ngay trong năm
+                                2025!
+                            </div>
+                            <div class="blog-desc">
+                                Mạng chập chờn khiến công việc gián đoạn?
+                                Hãy dứt điểm ngay vấn đề này với router
+                                chuẩn cao! Nội dung này dài để kiểm tra tính
+                                năng ẩn bớt chữ, hiển thị dấu ba chấm...
+                            </div>
+                            <div class="read-more mt-auto">
+                                <a href="/blog/post.html">Tìm hiểu thêm &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 py-3">
+                    <div class="card-blog-home">
+                        <a href="/blog/post.html">
+                            <img class="card-blog-home-img" src="Assest/media/900x600/41.jpg" alt="" />
+                        </a>
+                        <div class="card-blog-home-body">
+                            <div class="blog-title fs-1">
+                                WiFi 6 – Bước Nhảy Vọt Cho Kết Nối Mạng!
+                            </div>
+                            <div class="blog-desc">
+                                Trong kỷ nguyên số hóa hiện nay, nhu cầu sử
+                                dụng mạng Internet tốc độ cao và ổn định
+                                chưa bao giờ trở nên cấp thiết đến vậy.
+                            </div>
+                            <div class="read-more mt-auto">
+                                <a href="/blog/post.html">Tìm hiểu thêm &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 py-3">
+                    <div class="card-blog-home">
+                        <a href="/blog/post.html">
+                            <img class="card-blog-home-img" src="Assest/media/900x600/42.jpg" alt="" />
+                        </a>
+                        <div class="card-blog-home-body">
+                            <div class="blog-title fs-1">
+                                Bạn Ghét WiFi Yếu Trong Phòng Ngủ?
+                            </div>
+                            <div class="blog-desc">
+                                Trong thời đại công nghệ hiện nay, kết nối
+                                WiFi đã trở thành một phần
+                            </div>
+                            <div class="read-more mt-auto">
+                                <a href="/blog/post.html">Tìm hiểu thêm &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="partners" class="container d-flex flex-column gap-5">
+            <!-- Container chứa các logo, nếu tràn sẽ xuống dòng và căn giữa -->
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="px-2 px-lg-5">
+                    <img src="Assest/logo/1.png" alt="Logo 1" />
+                </div>
+                <div class="px-2 px-lg-5">
+                    <img src="Assest/logo/2.png" alt="Logo 2" />
+                </div>
+                <div class="px-2 px-lg-5">
+                    <img src="Assest/logo/3.png" alt="Logo 3" />
+                </div>
+                <div class="px-2 px-lg-5">
+                    <img src="Assest/logo/4.png" alt="Logo 4" />
+                </div>
+                <div class="px-2 px-lg-5">
+                    <img src="Assest/logo/5.png" alt="Logo 5" />
+                </div>
+                <div class="px-2 px-lg-5">
+                    <img src="Assest/logo/6.png" alt="Logo 6" />
+                </div>
+                <div class="px-2 px-lg-5">
+                    <img src="Assest/logo/7.png" alt="Logo 7" />
+                </div>
+                <div class="px-2 px-lg-5">
+                    <img src="Assest/logo/8.png" alt="Logo 8" />
+                </div>
+                <div class="px-2 px-lg-5">
+                    <img src="Assest/logo/9.png" alt="Logo 9" />
+                </div>
+                <div class="px-2 px-lg-5">
+                    <img src="Assest/logo/10.png" alt="Logo 10" />
+                </div>
+                <div class="px-2 px-lg-5">
+                    <img src="Assest/logo/11.png" alt="Logo 11" />
+                </div>
+                <div class="px-2 px-lg-5">
+                    <img src="Assest/logo/12.png" alt="Logo 12" />
+                </div>
+                <div class="px-2 px-lg-5">
+                    <img src="Assest/logo/13.png" alt="Logo 13" />
+                </div>
+                <div class="px-2 px-lg-5">
+                    <img src="Assest/logo/14.png" alt="Logo 14" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bottom-0 pt-lg-10 pb-lg-10 pb-20 container text-primary fs-5 border-top border-1">
+        <div class="row gap-5">
+            <div class="row col-lg-6 col-12 flex-grow-1">
+                <div class="col-12 col-sm-6 d-flex d-sm-block gap-sm-0 gap-5 align-items-center">
+                    <img class="w-sm-75 w-50" src="/Assest/lxc-dark.png" alt="" />
+                    <p class="mb-sm-4 mb-0">
+                        <i class="fi fi-rr-house-chimney pe-3 fs-3"></i>Toà
+                        nhà CT1, Căn 1.07, Đường 19 tháng 5, Xã Vĩnh Hiệp,
+                        Thành Phố Nha Trang
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 d-flex flex-column justify-content-around">
+                    <h3>Liên hệ</h3>
+                    <p>
+                        <i class="fi fi-rr-phone-call pe-3 fs-fluid"></i>
+                        088 6568 444 - 0258 3510 299
+                    </p>
+                    <p>
+                        <i class="fi fi-rr-envelope pe-3 fs-3"></i>info@lxc.vn
+                    </p>
+                    <p>
+                        <i class="fi fi-rr-envelope pe-3 fs-3"></i>info@lxc.vn
+                    </p>
+                </div>
+            </div>
+            <div class="row col-lg-6 col-12 justify-content-between">
+                <div class="row col-4 flex-column justify-content-around">
+                    <h3>Giới thiệu</h3>
+                    <a href="#" class="d-block fs-6 mb-4">Về chúng tôi</a>
+                    <a href="#" class="d-block fs-6 mb-4">Tin tức</a>
+                    <a href="#" class="d-block fs-6 mb-4">Liên hệ</a>
+                    <a href="#" class="d-block fs-6 mb-4">Tuyển dụng</a>
+                </div>
+                <div class="row col-4 flex-column justify-content-around">
+                    <h3>Chính sách khách hàng</h3>
+                    <a href="#" class="d-block fs-6 mb-4">Về chúng tôi</a>
+                    <a href="#" class="d-block fs-6 mb-4">Tin tức</a>
+                    <a href="#" class="d-block fs-6 mb-4">Liên hệ</a>
+                    <a href="#" class="d-block fs-6 mb-4">Tuyển dụng</a>
+                </div>
+                <div class="row col-4 flex-column justify-content-around">
+                    <h3>Liên kết mạng xã hội</h3>
+                    <div class="d-flex justify-content-between">
+                        <i class="fs-1 fi fi-brands-facebook"></i>
+                        <i class="fs-1 fi fi-brands-tik-tok"></i>
+                        <i class="fs-1 fi fi-brands-youtube"></i>
+                        <i class="fs-1 fi fi-rr-phone-call"></i>
+                    </div>
+                    <a href="http://online.gov.vn/Home/WebDetails/80612">
+                        <img class="w-100" src="Assest/logoSaleNoti.webp" alt="" />
+                    </a>
+                    <p class="fs-7">Copyright © 2025 by Fama</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="/js/admin.js"></script>
+<script type="text/javascript" src="/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+</html>

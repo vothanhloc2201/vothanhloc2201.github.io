@@ -1,0 +1,36 @@
+.about{
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .feature-icon {
+        color: #008000;
+    }
+    .section-title {
+        font-weight: bold;
+        font-size: 30px;
+        color: #0a3c84;
+    }
+    .stats-container {
+        padding: 50px;
+        text-align: center;
+    }
+    .stat-number {
+        font-size: 48px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    .stat-title {
+        font-size: 18px;
+        color: #666;
+    }
+    .stat-item {
+        padding: 20px;
+    }
+    h3.fw-bold.fs-1 {
+        font-size: 3rem !important;
+        font-weight: bold !important;
+        text-align: center;
+    } 
+}

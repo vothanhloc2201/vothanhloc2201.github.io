@@ -1,0 +1,45 @@
+.project {
+    .category {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: #0056b3;
+        color: white;
+        font-size: 12px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .category.design { background: #0066ff; }
+    .category.management { background: #002766; }
+    .category.fashion { background: #ff66b2; }
+    .category.photography { background: #007f5f; }
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+    .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .card:hover {
+        transform: scale(1.03);
+    }
+    .card-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card-text {
+        font-size: 1.2rem;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}

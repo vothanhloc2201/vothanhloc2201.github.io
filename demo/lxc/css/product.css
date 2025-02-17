@@ -1,0 +1,206 @@
+.product-list
+{
+    /* Fixed card height */
+    .card {
+        height: 500px; /* Chiều cao cố định cho card */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    /* Fixed image height */
+    .card img {
+        height: 200px;         /* Fixed height for the image */
+        width: 100%;
+        object-fit: contain;   /* Hiển thị toàn bộ hình ảnh mà không bị cắt (display full image without cropping) */
+    }
+    
+      
+
+    .breadcrumb-container {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    .quantity-editor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        padding: 8px;
+        padding-left: 0px;
+        border-radius: 8px;
+        /* border: 1px solid #ddd; */
+        width: fit-content;
+    }
+    .max-height-200 {
+        max-height: 200px;
+    }
+    /* Nút tăng / giảm */
+    .quantity-editor button {
+        /* border: 1px solid #ddd; */
+        width: 50px;
+        height: 45px;
+        background-color: var(--secondary);
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .quantity-editor button:hover {
+        background-color: #e68900; /* Màu cam đậm hơn khi hover */
+        transform: translateY(-2px); /* Hiệu ứng nhấn nhẹ */
+    }
+    
+    /* Input số lượng */
+    .quantity-editor input {
+        width: 60px;
+        height: 45px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        /* border: 1px solid #ddd; */
+        background: white;
+        margin: 0 5px; /* Khoảng cách giữa input và nút */
+        border-radius: 6px;
+    }
+    
+    /* Responsive cho mobile */
+    @media (max-width: 500px) {
+        .quantity-editor {
+            gap: 6px;
+        }
+        .quantity-editor button {
+            width: 45px;
+            height: 40px;
+            font-size: 16px;
+        }
+        .quantity-editor input {
+            width: 50px;
+            height: 40px;
+            font-size: 16px;
+        }
+    }
+    
+    .price-filter {
+        width: 100%; /* Chiếm tối đa chiều dài của thẻ chứa nó */
+        max-width: 100%;
+        text-align: center;
+    }
+    .price-filter h3 {
+        color: #102c66;
+        margin-bottom: 10px;
+    }
+    .range-slider {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 20px 0;
+    }
+    .slider {
+        width: 100%;
+        position: relative;
+        background: lightgray;
+        height: 4px;
+        border-radius: 2px;
+    }
+    .slider input[type=range] {
+        position: absolute;
+        width: 100%;
+        top: -6px;
+        left: 0px;
+        background: transparent;
+        -webkit-appearance: none;
+    }
+    .slider input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 18px;
+        height: 18px;
+        background: black;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+    }
+    .price-values {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #eceff4;
+        padding: 8px;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    .underline-light {
+        width: 100%; /* Kéo dài tối đa chiều rộng */
+        max-width: 100%; /* Đảm bảo phù hợp với container */
+        height: 1px; /* Độ dày nhẹ nhàng */
+        background-color: rgba(0, 0, 0, 0.2); /* Màu sắc tinh tế */
+        margin: 10px 0; /* Khoảng cách trên và dưới */
+      }
+    
+      .brand-container {
+        width: 100%; /* Chiếm toàn bộ chiều rộng của thẻ chứa nó */
+        max-width: 100%;
+        background: white;
+        padding: 15px;
+        padding-left: 0px;
+        border-radius: 8px;
+    }
+    .brand-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #102c66;
+        margin-bottom: 10px;
+    }
+    .brand-list {
+        max-height: 200px; /* Tạo scroll khi vượt quá chiều cao */
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #102c66 #f0f0f0;
+    }
+    .brand-list::-webkit-scrollbar {
+        width: 6px;
+    }
+    .brand-list::-webkit-scrollbar-thumb {
+        background: #102c66;
+        border-radius: 10px;
+    }
+    .brand-list::-webkit-scrollbar-track {
+        background: #f0f0f0;
+    }
+    .brand-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+        color: #102c66;
+        padding: 5px 0;
+    }
+    .brand-checkbox {
+        width: 18px;
+        height: 18px;
+        accent-color: #102c66;
+        border: 2px solid #102c66;
+        border-radius: 4px;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+    .brand-checkbox:checked {
+        background-color: #102c66;
+        border-color: #102c66;
+    }
+    .pagination-container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+    }
+}

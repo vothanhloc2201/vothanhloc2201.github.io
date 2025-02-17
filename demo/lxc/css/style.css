@@ -1,0 +1,588 @@
+:root {
+  --secondary: #fd8d27;
+}
+
+body {
+  background: white;
+  font-family: "Saira", serif;
+  position: relative;
+  height: max-content;
+}
+
+#footer-nav {
+  width: 100vw;
+}
+
+.sticky-head {
+  position: fixed;
+  top: 0px;
+}
+
+.carousel-item img {
+  width: 100vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-info {
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.card-info img {
+  transition: all linear .5s;
+}
+
+.card-info img:hover {
+  scale: 1.2;
+}
+
+.prev i,
+.next i {
+  font-size: 55px;
+  opacity: .3;
+  color: var(--bs-primary);
+  background: white;
+  padding: 0;
+  line-height: 0;
+  border-radius: 50%;
+  transition: all linear .3s;
+}
+
+.prev i:hover,
+.next i:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-info {
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.874);
+  width: 100%;
+  padding-top: 5%;
+
+  a {
+    font-size: calc(1.3rem + 0.2vw);
+  }
+}
+
+.mask {
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(0deg, white, rgba(255, 255, 255, 0));
+  z-index: 100;
+  position: absolute;
+  bottom: 0;
+}
+
+.introduce-title {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: var(--bs-primary);
+}
+
+.introduce-desc {
+  font-size: 1.7rem;
+  color: var(--bs-primary);
+}
+
+.single-item .content {
+  width: 100vw;
+  padding-top: 1%;
+  position: absolute;
+  z-index: 3;
+  height: 100%;
+  /* padding: 1% 200px 1% 200px ; */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(255, 255, 255, 0));
+}
+
+.banner-title {
+  font-size: 4.5rem;
+  width: 50%;
+  color: white;
+}
+
+.banner-desc {
+  font-size: 1.7rem;
+  width: 70%;
+  color: white;
+}
+
+.card-side {
+  position: absolute;
+  top: 5%;
+  right: -50px;
+  height: 100%;
+  width: 52px;
+  border: 2px solid rgba(58, 54, 54, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all ease-in-out .3s;
+
+}
+
+.product-info {
+  transition: all ease-in-out .5s;
+}
+
+.card-side i {
+  font-size: 15px;
+  color: var(--bs-primary);
+  background: rgb(227, 227, 227);
+  border-radius: 100%;
+  height: 45px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card-side i:after {
+  content: "eeee";
+  padding: 5px 10px;
+  background: rgb(227, 227, 227);
+  border-radius: 10px;
+  z-index: 5;
+  position: absolute;
+  transform: translateX(-110%);
+  opacity: 0;
+  transition: all linear .5s;
+}
+
+.card-item img {
+  transition: all ease-in-out .5s;
+}
+
+.card-item:hover {
+  cursor: pointer;
+
+  .product-info {
+    transform: translateY(110%)
+  }
+
+  img {}
+
+  .card-side {
+    transform: translateX(-60px)
+  }
+}
+
+.card-side i:hover:after {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.title {
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: bolder;
+  color: var(--bs-primary);
+}
+
+#menu-bar {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.card-blog-home {
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  background: #fff;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  transition: box-shadow 0.3s ease;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.card-blog-home:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-blog-home-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-blog-home-body {
+  flex: 1;
+  /* chiếm hết chiều cao còn lại */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Giới hạn blog-title và blog-desc hiển thị 2 dòng */
+.blog-title,
+.blog-desc {
+  display: -webkit-box;
+  /* Sử dụng flexbox ẩn bớt chữ */
+  -webkit-line-clamp: 2;
+  /* Chỉ hiển thị tối đa 2 dòng */
+  -webkit-box-orient: vertical;
+  /* Hướng hộp dọc (vertical) */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* Thêm dấu '...' */
+  margin-bottom: 0.5rem;
+  /* Khoảng cách giữa các đoạn */
+}
+
+/* Phóng to chữ "Tìm hiểu thêm" */
+.read-more a {
+  font-size: 1.5rem;
+  /* Chỉnh font-size to hơn (tùy ý) */
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.read-more a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
+.blog * {
+  border-radius: .5rem;
+}
+
+/* Remove absolute positioning */
+.blog-info {
+  /* position: absolute;  <-- remove this line */
+  width: 100%;
+  background: rgba(0, 0, 0, 0.405);
+  color: white;
+}
+
+.blog-info .blog-desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+/* If you want the date-tag to stay separate, you can also adjust it */
+.date-tag {
+  background: var(--bs-primary);
+  /* Instead of absolute positioning, use margin-top to separate */
+  margin-top: 10px;
+  border-radius: .5rem;
+  color: white;
+  padding: 2% 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects .project-info {
+  z-index: 3;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.894);
+  width: 100%;
+  padding: 2% 5%;
+}
+
+#projects .card-info {
+  transition: all ease-in-out .5s;
+}
+
+#projects .slick-slide:not(.slick-center) {
+  scale: 0.9;
+  opacity: 0.5;
+}
+
+#menu-side {
+  position: fixed;
+  width: 0;
+  height: 100vh;
+  background: white;
+  z-index: 2;
+  font-size: 1.3rem;
+  overflow: hidden;
+  transition: all ease-in-out .15s;
+  padding: 10% 0;
+
+  i {
+    font-size: 1.3rem;
+  }
+
+  .menu-content {
+    padding: 0 10%;
+  }
+}
+
+.list-group-item {
+  border: 0 !important;
+  padding-left: 0;
+}
+
+#menu-side .accordion-item {
+  border: 0;
+}
+
+.solution-product {
+  transition: all ease-in-out .5s;
+  overflow: hidden;
+  min-width: 10%;
+  width: 10%;
+
+  img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.solution-product:hover {
+  width: 100%;
+}
+
+
+#partners img {
+  height: 100px;
+}
+
+.title-target,
+.desc-target {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade {
+  opacity: 0;
+}
+
+.desc {
+  font-size: 1.7rem;
+  color: var(--bs-primary);
+}
+
+.cart-view {
+  width: 450px;
+  background: #fff;
+  position: absolute;
+  right: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.text-orange {
+  color: var(--secondary);
+}
+
+.orange-btn {
+  border: 1px solid var(--secondary) !important;
+  padding: calc(0.75rem + 1px) calc(1.5rem + 1px);
+  background: rgba(255, 255, 255, 0);
+  color: var(--secondary);
+  transition: all ease-out .3s;
+}
+
+.orange-btn:hover {
+  color: white;
+  background: orange;
+  border: 0;
+}
+
+
+.cart:hover .cart-view {
+  pointer-events: all;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.orange-btn-fill {
+  border: 0;
+  padding: calc(0.75rem + 1px) calc(1.5rem + 1px);
+  background: var(--secondary);
+  color: white;
+  transition: all ease-out .3s;
+}
+
+.orange-btn-fill:hover {
+  border: 1px solid var(--secondary) !important;
+  background: rgba(255, 255, 255, 0);
+  color: var(--secondary);
+}
+
+.post>img {
+  aspect-ratio: 19/9;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.post p.desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  /* Giới hạn 4 dòng */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-prev,
+.slick-next {
+  width: 50px;
+  height: 100%;
+  font-size: 50px;
+  top: calc(50% + .7rem);
+  z-index: 2;
+  opacity: .5;
+  transition: opacity ease .5s;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-size: 50px;
+  color: var(--bs-primary);
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+  opacity: 1;
+}
+
+.project-info .title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Giới hạn 4 dòng */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-category-nav {
+  width: 100vw;
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transform: translateY(20px);
+  /* opacity: 1; */
+  opacity: 0;
+  transition: all ease .3s;
+  pointer-events: none;
+
+
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    /* Luôn có 6 cột */
+    gap: 25px;
+  }
+
+  .collection-menu{
+    border-top-left-radius: .5rem ;
+    border-bottom-left-radius: .5rem ;
+    padding: 1.5rem;
+    transition: background 0.3s;
+  }
+  /* .collection-menu:hover{
+    background: var(--bs-gray-100);
+    cursor: pointer;
+  } */
+  
+  .collection{
+    padding: 1.5rem;
+    border-radius: .5rem ;
+  }
+
+
+} 
+.product-categories-target:hover .product-category-nav{
+  pointer-events: all;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+
+}
+.product-categories-target i{
+  transition: all ease-in-out .3s;
+}
+.product-categories-target:hover i{
+  transform: rotate(180deg);
+  /* display: none; */
+} 
+
+.multiline-ellipsis {
+  position: relative;
+  /* Cho phép định vị phần tử con */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Giới hạn 2 dòng */
+  -webkit-box-orient: vertical;
+  /* Hướng dọc */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.ellipsis-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* Giới hạn 4 dòng */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.info-about-us-home {
+  .custom-title {
+    font-size: 2.5rem;
+    /* chữ to hơn */
+    font-weight: bold;
+  }
+
+  .custom-desc {
+    font-size: 1.25rem;
+  }
+
+  .product-group {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* đảm bảo không có khoảng trống thừa */
+  }
+
+  .divider {
+    height: 1px;
+    background: #ddd;
+    /* màu xám nhạt cho đường kẻ */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}

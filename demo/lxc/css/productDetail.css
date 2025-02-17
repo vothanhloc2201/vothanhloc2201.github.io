@@ -1,0 +1,200 @@
+.product-detail {
+    .out-of-stock {
+        background: #a00;
+        color: white;
+        padding: 5px 10px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .quantity-input {
+        width: 80px;
+        text-align: center;
+    }
+
+    .thumbnail-container {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        max-height: 340px;
+        padding-right: 10px;
+        width: 100px;
+    }
+
+    .thumbnail-container img {
+        cursor: pointer;
+        margin-bottom: 10px;
+        width: 100px;
+    }
+
+    .image-wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #main-image {
+        max-width: calc(100% - 110px);
+        height: 500px;
+        object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+        .image-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .thumbnail-container {
+            flex-direction: row;
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-height: none;
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .thumbnail-container img {
+            margin-bottom: 0;
+            margin-right: 10px;
+            width: 80px;
+        }
+
+        #main-image {
+            max-width: 100%;
+        }
+    }
+
+    .quantity-controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #eceff4;
+        border-radius: 30px;
+        padding: 8px 12px;
+        width: 120px;
+    }
+
+    .quantity-controls button {
+        background: #102c66;
+        border: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .quantity-controls button:hover {
+        background: #0d1f4d;
+    }
+
+    .quantity-controls input {
+        width: 40px;
+        height: 30px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        color: #102c66;
+        border: none;
+        background: transparent;
+        outline: none;
+    }
+
+    .nav-tabs .nav-link {
+        color: #000;
+        font-weight: bold;
+    }
+
+    .nav-tabs .nav-link.active {
+        color: #0056b3;
+        border-bottom: 3px solid #0056b3;
+    }
+
+    .product-carousel {
+        background: #ffffff; /* Change background to white */
+        padding: 20px 0;
+        position: relative;
+    }
+    .carousel-inner {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        cursor: grab;
+    }
+    .carousel-inner::-webkit-scrollbar {
+        display: none;
+    }
+    .product-card {
+        flex: 0 0 auto;
+        width: 250px;
+        margin: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+        padding: 10px;
+        background: white;
+    }
+    .product-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .product-card h5 {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .price {
+        color: #e63946;
+        font-weight: bold;
+    }
+    .old-price {
+        text-decoration: line-through;
+        color: #888;
+    }
+    .badge-custom {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: #ff6b6b;
+        color: white;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        border-radius: 5px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        width: 50px;
+        height: 50px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+    }
+    .carousel-control-prev {
+        left: 10px;
+    }
+    .carousel-control-next {
+        right: 10px;
+    }
+    .carousel-control-prev:hover, .carousel-control-next:hover {
+        background: rgba(0, 0, 0, 0.9);
+    }
+}

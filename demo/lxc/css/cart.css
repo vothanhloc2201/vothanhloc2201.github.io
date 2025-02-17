@@ -1,0 +1,98 @@
+.cart{
+    .cart-container {
+        width: 100%; /* Chiếm toàn bộ chiều rộng của thẻ chứa nó */
+        background: white;
+        padding: 20px;
+        padding-left: 0px;
+    }
+    .cart-title {
+        font-size: 28px;
+        font-weight: bold;
+        color: #102c66;
+    }
+    .table th {
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        color: #102c66;
+        border-bottom: #0d1f4d 2px solid;
+    }
+    .table tbody td{
+        font-size: 16px;
+        font-weight: 400;
+        color: #102c66;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .table tfoot{
+        font-size: 20px;
+        font-weight: bold;
+        color: #102c66;
+        text-align: center;
+    }
+    .btn-primary {
+        background-color: #102c66;
+        border: none;
+    }
+    .btn-primary:hover {
+        background-color: #0d1f4d;
+    }
+    .btn-checkout {
+        background-color: orange;
+        border: none;
+        font-weight: bold;
+    }
+    .btn-checkout:hover {
+        background-color: darkorange;
+    }
+    .quantity-controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #eceff4;
+        border-radius: 30px;
+        padding: 8px 12px;
+        width: 120px;
+        margin: auto;
+    }
+    .quantity-controls button {
+        background: #102c66;
+        border: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .quantity-controls button:hover {
+        background: #0d1f4d;
+    }
+    .quantity-controls input {
+        width: 40px;
+        height: 30px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        color: #102c66;
+        border: none;
+        background: transparent;
+        outline: none;
+    }
+    .cart-summary {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .product-img {
+        width: 150px;
+        height: auto;
+        margin-right: 10px;
+    }
+}

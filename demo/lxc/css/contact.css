@@ -1,0 +1,59 @@
+.contact {
+    .contact-section {
+        padding: 20px 0;
+    }
+    .contact-info h2 {
+        font-weight: bold;
+        font-size: 3rem;
+    }
+    .contact-info p {
+        font-size: 1.5rem;
+    }
+    .contact-info button {
+        border-radius: 25px;
+        padding: 10px 20px;
+        background-color: #212529; /* Màu nền mặc định */
+        color: white;
+        transition: background-color 0.3s;
+    }
+    .contact-info button:hover {
+        background-color: #000; /* Màu nền khi hover */
+    }
+    .social-icons a {
+        font-size: 1.5rem;
+        margin-right: 10px;
+        color: #333;
+        text-decoration: none;
+    }
+    .map-container iframe {
+        border-radius: 10px;
+    }
+    .contact-form {
+        background: #f8f9fa;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+    }
+    .contact-form textarea {
+        height: 150px;
+        resize: none;
+    }
+    .btn-send {
+        background-color: #ff7f50;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: white;
+        font-weight: bold;
+    }
+    .btn-send:hover {
+        background-color: #e66a40;
+    }
+}
