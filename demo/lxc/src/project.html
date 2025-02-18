@@ -26,7 +26,7 @@
 	<div class="sticky-top bg-white shadow-sm d-none d-lg-block">
         <div class="container d-flex position-relative">
             <div id="logo" class="w-25 d-flex justify-content-between align-items-center">
-                <a href="/Index.html">
+                <a href="/index.html">
                     <img class="w-75" src="/Assest/lxc-dark.png" alt="" />
                 </a>
                 <a href="javascript:void(0);" id="menu-burger">
@@ -200,10 +200,16 @@
     <div id="nav-mobile" class="sticky-top bg-white shadow-sm d-block d-lg-none">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <a href="/Index.html">
-                    <img class="w-200px" src="../Assest/lxc-dark.png" alt="" />
+                <a href="/index.html">
+                    <img class="w-150px" src="../Assest/lxc-dark.png" alt="" />
                 </a>
-                <i class="fi fi-rr-search fs-3tx text-primary"></i>
+                <div id="mobile-search" class="w-50px text-center h-100">
+                    <i class="fi fi-rr-search fs-3tx text-primary"></i>
+                </div>
+            </div>
+            <div id="mobile-search-bar" class="w-100 d-flex gap-5 overflow-hidden">
+                <input type="text" class="form-control" style="height: max-content" placeholder="Nhập thông tin tìm kiếm ...">
+                <button class="orange-btn-fill rounded-1" style="height: max-content">Tìm </button>
             </div>
         </div>
     </div>
@@ -322,21 +328,25 @@
             <i class="fi fi-rr-menu-burger fs-2x"></i>
         </div>
         <div class="">
-            <i class="fi fi-rr-house-chimney fs-2x"></i>
+            <a href="/index.html">
+                <i class="fi fi-rr-house-chimney fs-2x"></i>
+            </a>
         </div>
-         
+
         <div class="">
-            <i class="fi fi-rr-user fs-2x"></i>
+            <a href="/src/ListProduct.html">
+                <i class="fi fi-rr-shop fs-2x"></i>
+            </a>
         </div>
-         <div class="position-relative">
-			<div class="">
-				<i class="fi fi-rr-shopping-cart fs-2x"></i>
-			</div>
-			<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-				5
-				<span class="visually-hidden">Số lượng sản phẩm trong giỏ hàng</span>
-			</span>
-		</div>
+        <div class="position-relative">
+            <a href="/src/cart.html" class="">
+                <i class="fi fi-rr-shopping-cart fs-2x"></i>
+            </a>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                5
+                <span class="visually-hidden">Số lượng sản phẩm trong giỏ hàng</span>
+            </span>
+        </div>
     </div>
 
     <section class="project container py-3">
@@ -412,52 +422,62 @@
             </div>
         </div>  
     </section>
-	<footer class="bottom-0 pt-lg-10 pb-lg-10 pb-20 container text-primary fs-5 border-top border-1 ">
-		<div class="row gap-5">
-			<div class="row col-lg-6 col-12 flex-grow-1">
-				<div class="col-12 col-sm-6 d-flex d-sm-block gap-sm-0 gap-5 align-items-center">
-					<img class="w-sm-75 w-50" src="../Assest/lxc-dark.png" alt="">
-					<p class="mb-sm-4 mb-0"><i class="fi fi-rr-house-chimney pe-3 fs-3"></i>Toà nhà CT1, Căn 1.07, Đường 19 tháng 5, Xã Vĩnh Hiệp, Thành Phố Nha Trang</p>
-				</div>
-				<div class="col-12 col-sm-6 d-flex flex-column justify-content-around">
-					<h3>Liên hệ</h3>
-					<p><i class="fi fi-rr-phone-call pe-3 fs-fluid"></i> 088 6568 444 - 0258 3510 299</p>
-					<p><i class="fi fi-rr-envelope pe-3 fs-3"></i>info@lxc.vn</p>
-					<p><i class="fi fi-rr-envelope pe-3 fs-3"></i>info@lxc.vn</p>
-				</div>
-			</div>
-			<div class="row col-lg-6 col-12 justify-content-between">
-				<div class="row col-4 flex-column justify-content-around">
-					<h3>Giới thiệu</h3>
-					<a href="#" class="d-block fs-6 mb-4">Về chúng tôi</a>
-					<a href="#" class="d-block fs-6 mb-4">Tin tức</a>
-					<a href="#" class="d-block fs-6 mb-4">Liên hệ</a>
-					<a href="#" class="d-block fs-6 mb-4">Tuyển dụng</a>
-				</div>
-				<div class="row col-4 flex-column justify-content-around">
-					<h3>Chính sách khách hàng</h3>
-					<a href="#" class="d-block fs-6 mb-4">Về chúng tôi</a>
-					<a href="#" class="d-block fs-6 mb-4">Tin tức</a>
-					<a href="#" class="d-block fs-6 mb-4">Liên hệ</a>
-					<a href="#" class="d-block fs-6 mb-4">Tuyển dụng</a>
-				</div>
-				<div class="row col-4 flex-column justify-content-around">
-					<h3>Liên kết mạng xã hội</h3>
-					<div class="d-flex justify-content-between">
-						<i class="fs-1 fi fi-brands-facebook"></i>
-						<i class="fs-1 fi fi-brands-tik-tok"></i>
-						<i class="fs-1 fi fi-brands-youtube"></i>
-						<i class="fs-1 fi fi-rr-phone-call"></i>
-					</div>
-					<a href="http://online.gov.vn/Home/WebDetails/80612">
-						<img class="w-100" src="../Assest/logoSaleNoti.webp" alt="">
-					</a>
-					<p>Copyright © 2025 by Fama</p>
-				</div>
-			</div>
-			
-		</div>
-	</footer>
+	<footer class="bottom-0 pt-lg-10 pb-lg-10 pb-20 container text-primary fs-5 border-top border-1">
+        <div class="row gap-5">
+            <div class="row col-lg-6 col-12 flex-grow-1 gap-5">
+                <div class="col-12 col-sm-6 row d-sm-block gap-sm-0 align-items-center">
+                    <img class="col-12" src="/Assest/lxc-dark.png" alt="" />
+                    <p class="mb-sm-4 mb-0 col-12">
+                        <i class="fi fi-rr-house-chimney pe-3 fs-3"></i>Toà
+                        nhà CT1, Căn 1.07, Đường 19 tháng 5, Xã Vĩnh Hiệp,
+                        Thành Phố Nha Trang
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 d-flex flex-column justify-content-around">
+                    <h3>Liên hệ</h3>
+                    <p>
+                        <i class="fi fi-rr-phone-call pe-3 fs-fluid"></i>
+                        088 6568 444 - 0258 3510 299
+                    </p>
+                    <p>
+                        <i class="fi fi-rr-envelope pe-3 fs-3"></i>info@lxc.vn
+                    </p>
+                    <p>
+                        <i class="fi fi-rr-envelope pe-3 fs-3"></i>info@lxc.vn
+                    </p>
+                </div>
+            </div>
+            <div class="row col-lg-6 col-12 justify-content-between">
+                <div class="row col-sm-4 col-12 flex-column justify-content-around">
+                    <h3>Giới thiệu</h3>
+                    <a href="#" class="d-block fs-6 mb-4">Về chúng tôi</a>
+                    <a href="#" class="d-block fs-6 mb-4">Tin tức</a>
+                    <a href="#" class="d-block fs-6 mb-4">Liên hệ</a>
+                    <a href="#" class="d-block fs-6 mb-4">Tuyển dụng</a>
+                </div>
+                <div class="row col-sm-4 col-12 flex-column justify-content-around">
+                    <h3>Chính sách khách hàng</h3>
+                    <a href="#" class="d-block fs-6 mb-4">Về chúng tôi</a>
+                    <a href="#" class="d-block fs-6 mb-4">Tin tức</a>
+                    <a href="#" class="d-block fs-6 mb-4">Liên hệ</a>
+                    <a href="#" class="d-block fs-6 mb-4">Tuyển dụng</a>
+                </div>
+                <div class="row col-sm-4 col-12 flex-column justify-content-around">
+                    <h3>Liên kết mạng xã hội</h3>
+                    <div class="d-flex justify-content-between">
+                        <i class="fs-1 fi fi-brands-facebook"></i>
+                        <i class="fs-1 fi fi-brands-tik-tok"></i>
+                        <i class="fs-1 fi fi-brands-youtube"></i>
+                        <i class="fs-1 fi fi-rr-phone-call"></i>
+                    </div>
+                    <a href="http://online.gov.vn/Home/WebDetails/80612">
+                        <img class="w-100" src="/Assest/logoSaleNoti.webp" alt="" />
+                    </a>
+                    <p class="fs-7">Copyright © 2025 by Fama</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="/js/admin.js"></script>

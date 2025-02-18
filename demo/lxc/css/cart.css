@@ -1,6 +1,6 @@
-.cart{
+.cart {
     .cart-container {
-        width: 100%; /* Chiếm toàn bộ chiều rộng của thẻ chứa nó */
+        width: 100%; /* Full width */
         background: white;
         padding: 20px;
         padding-left: 0px;
@@ -17,14 +17,14 @@
         color: #102c66;
         border-bottom: #0d1f4d 2px solid;
     }
-    .table tbody td{
+    .table tbody td {
         font-size: 16px;
         font-weight: 400;
         color: #102c66;
         text-align: center;
         vertical-align: middle;
     }
-    .table tfoot{
+    .table tfoot {
         font-size: 20px;
         font-weight: bold;
         color: #102c66;
@@ -96,3 +96,44 @@
         margin-right: 10px;
     }
 }
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .cart .cart-container {
+        padding: 10px; /* Reduced padding */
+    }
+    .cart .cart-title {
+        font-size: 24px; /* Smaller title font */
+    }
+    .cart .table th {
+        font-size: 16px; /* Smaller header font */
+    }
+    .cart .table tbody td {
+        font-size: 14px; /* Smaller cell font */
+    }
+    .cart .table tfoot {
+        font-size: 16px; /* Smaller footer font */
+    }
+    .cart .quantity-controls {
+        width: 100px; /* Adjusted control width */
+        padding: 6px 10px;
+    }
+    .cart .quantity-controls button {
+        font-size: 16px;
+        width: 28px;
+        height: 28px;
+    }
+    .cart .quantity-controls input {
+        width: 30px;
+        height: 28px;
+        font-size: 14px;
+    }
+    .cart .product-img {
+        width: 100px; /* Smaller product image */
+        margin-right: 5px;
+    }
+}
+
+/* Extra adjustments for very small screens */
+@media (max-width: 480px) {
+    .car
